@@ -33,6 +33,8 @@ Rails.application.routes.draw do
      end
    end
 
+   resources :carts
+
  
 
   # Example resource route with options:
