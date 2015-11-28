@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :products
+    resources :orders
     resources :users do 
       member do
         post :changeAdmin
@@ -46,6 +47,12 @@ Rails.application.routes.draw do
      end
    end
 
+ 
+
+
+namespace :account do
+   resources :orders
+ end
 
  
 
