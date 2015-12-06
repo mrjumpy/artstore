@@ -46,6 +46,8 @@ gem "pay2go"
 
 gem 'sqlite3', group: :development
 
+gem "figaro"
+
 group :production do
     gem "pg"
     gem "rails_12factor"

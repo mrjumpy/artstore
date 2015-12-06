@@ -35,8 +35,10 @@ Rails.application.configure do
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
 
+  config.action_mailer.default_url_options = { host: 'https://fierce-springs-1448.herokuapp.com/' } # 你的 heroku app 網址
+
   config.after_initialize do
-     Pay2go.integration_mode = :production
+     Pay2go.integration_mode = :development
    end
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
